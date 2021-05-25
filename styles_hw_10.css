@@ -1,0 +1,86 @@
+@import url(reset.css);
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("font_Roboto/Roboto-Regular.woff2") format('woff2');
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+
+}
+
+body, ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    background-color: #5C6F4E;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+nav{
+    position: absolute;
+    transition: opacity 1s;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 265px;
+    height: 187px;
+    background-color: #7B89BA;
+    padding: 15px 0;
+}
+div{
+    position: relative;
+}
+div:hover nav{
+    visibility: visible;
+    opacity: 1;
+}
+li{
+    font-size:2.4rem;
+    line-height: 1.17;
+}
+li a{
+    color: black;
+    transition: background-color 0.5s;
+    padding: 15px;
+    display: block;
+}
+li a:hover{
+    background-color: darkslateblue;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size:3.6rem;
+    line-height: 1.17;
+    padding:29px;
+    color: white;
+    flex-grow: 0.5;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    padding:5px;
+}
+.arrow{
+    width: 33px;
+    height: 20px;
+    padding:15px;
+
+
+}
+

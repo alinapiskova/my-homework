@@ -188,10 +188,11 @@ a {
     background-color: #FAFAFA;
 
 }
-.ul-wedding :first-child {
+.ul-wedding:hover li:first-child {
     background-color: #FFFFFF;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
+
 .img-wedding{
     width: 270px;
     height: 270px;

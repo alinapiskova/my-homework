@@ -75,6 +75,8 @@ a {
     text-align: center;
     margin-bottom: 80px;
     width: 952px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .img-services{
     margin-bottom: 22px;
@@ -143,7 +145,7 @@ a {
     border: #458FF6 solid 1px;
     padding: 16px 50px;
     color:#458FF6;
-    margin-top: 32px;
+    margin-top: 69px;
     margin-left: auto;
     margin-right: auto;
     justify-self: center;

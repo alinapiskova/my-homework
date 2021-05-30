@@ -1,0 +1,212 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("font_Mulish/Mulish-Bold700.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("font_Mulish/Mulish-light300.woff2") format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("font_Roboto/Roboto-Bold.woff2") format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("font_Roboto/Roboto-Regular.woff2") format('woff2');
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+/*CARDS SERVICES*/
+
+.services {
+    min-height: 100vh;
+    font-family: 'Mulish', Arial, sans-serif;
+    color: black;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+.text-h2-services {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 1.33;
+    margin-bottom: 33px;
+    text-align: center;
+    padding-top: 20px;
+}
+.text-h2-services::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-p-services{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    margin-bottom: 80px;
+    width: 952px;
+}
+.img-services{
+    margin-bottom: 22px;
+    height: 95px;
+}
+.text-h3-services{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.33;
+}
+.text-p-cards{
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.ul-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  354px 354px;
+    gap:37px 35px;
+    justify-content: space-between;
+    grid-template-areas:
+                "card1 card2 card3"
+                "card4 card5 card6";
+}
+.cards{
+    width: 350px;
+    height: 354px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    padding: 54px 37px 47px 37px;
+    list-style: none;
+    text-align: left;
+
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+
+.button-lean-more{
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    background-color: white;
+    border: #458FF6 solid 1px;
+    padding: 16px 50px;
+    color:#458FF6;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+}
+/*CARDS WEDDING*/
+.wedding{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    width: 1170px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-h2-wedding{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 23px;
+}
+.text-p-wedding{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.36;
+    text-align: center;
+    padding-bottom: 64px;
+}
+.ul-wedding{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  166px;
+    gap:30px;
+    justify-content: space-between;
+
+}
+.ul-wedding li{
+    width: 270px;
+    height: 436px;
+    background-color: #FAFAFA;
+
+}
+.ul-wedding :first-child {
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.img-wedding{
+    width: 270px;
+    height: 270px;
+}
+.text-h3-wedding{
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 1.2;
+    padding: 24px;
+    margin-bottom: 50px;
+
+}
+.button-see-more{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.36;
+    padding:24px;
+    color: black;
+
+}

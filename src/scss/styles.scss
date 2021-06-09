@@ -1,0 +1,127 @@
+@import "font-face";
+@import "mixin";
+@import "hero";
+@import "section-services";
+@import "section-medical-care";
+@import "section-mobile-apps";
+@import "section-reviews";
+@import "section-article";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+}
+
+body {
+  font-family: Mulish, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+.button {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  display: block;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-align: center;
+
+}
+
+.button_white {
+
+  background-color: white;
+  border: #458FF6 solid 1px;
+  padding: 16px 50px;
+  color: #458FF6;
+  margin-top: 32px;
+}
+
+.button_blue {
+  background-color: #458FF6;
+  color: #FFFFFF;
+  padding: 16px 40px;
+}
+
+.button_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_h2 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.33;
+  margin-bottom: 33px;
+}
+
+.text_h2_left {
+  text-align: left;
+  width: 330px;
+}
+
+.text_h2_center {
+  @include position-center-text;
+  @include position-center;
+}
+
+.text_h2::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: black;
+  margin-top: 26px;
+}
+
+.text_h2_center::after {
+  @include position-center;
+}
+
+.text_h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.33;
+
+}
+
+.text_p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.text_p_center {
+  text-align: center;
+}
+
+.text_p_left {
+  text-align: left;
+}
+
+.text_p_section {
+  width: 420px;
+}
+
+.text_p_cards {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}

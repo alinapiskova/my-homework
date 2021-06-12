@@ -3,28 +3,28 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../../font_Mulish/Mulish-Bold700.woff2") format("woff2"); }
+  src: url("../font_Mulish/Mulish-Bold700.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../../font_Mulish/Mulish-SemiBold600.woff2") format("woff2"); }
+  src: url("../font_Mulish/Mulish-SemiBold600.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../font_Mulish/Mulish-Regular400.woff2") format("woff2"); }
+  src: url("../font_Mulish/Mulish-Regular400.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../../font_Mulish/Mulish-light300.woff2") format("woff2"); }
+  src: url("../font_Mulish/Mulish-light300.woff2") format("woff2"); }
 
 .hero {
   min-height: 100vh;
@@ -80,6 +80,20 @@
     line-height: 1.52381;
     text-align: left;
     margin-bottom: 45px; }
+  .section-hero > a {
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    background-color: white;
+    border: #458FF6 solid 1px;
+    padding: 16px 50px;
+    color: #458FF6;
+    margin-top: 32px; }
   .section-hero .img-hero {
     grid-area: img-hero; }
 

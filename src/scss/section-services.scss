@@ -1,0 +1,45 @@
+.section-services {
+  > p {
+    margin-bottom: 80px;
+    width: 952px;
+    @include position-center;
+  }
+}
+.cards {
+  width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include position-center;
+  @include position-center-text;
+
+  > li {
+    width: 350px;
+    height: 354px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    padding: 54px 37px 47px 37px;
+    margin-bottom: 37px;
+    text-align: left;
+    > div{
+      width: 266px;
+    }
+
+    > img {
+      margin-bottom: 25px;
+      margin-top: 60px;
+      height: 95px;
+    }
+    > p{
+      margin-right: 45px;
+      @include position-left-text;
+    }
+
+  }
+}
+
+
+
+
+
+

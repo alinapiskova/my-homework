@@ -1,0 +1,15 @@
+.section-mobile-apps{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 434px;
+  align-items: center;
+  padding-top: 230px;
+  .text-section-mobile-apps{
+    align-self: center;
+    justify-self: center;
+  }
+  .img-section-mobile-apps{
+    height: 434px;
+  }
+
+}

@@ -1,13 +1,14 @@
 .hero {
   min-height: 100vh;
-  width: 1217px;
+  padding-right: 30px;
+
 
   .header {
-    height: 97px;
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
 
     div {
@@ -16,10 +17,13 @@
       }
 
       > span {
-        color: $color-background-blue-color;
+        color: map-get($color, background-blue-color);
         @include position-center-text;
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 1.255;
         padding: 5px 13px 4px;
-        background: $color-button-background-white-color;
+        background: map-get($color, button-background-white-color);
         width: 41px;
         height: 41px;
         border: none;
@@ -28,10 +32,10 @@
     }
 
     .nav-hero {
-      width: 545px;
+      gap: 40px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-end;
 
       .home {
@@ -40,7 +44,7 @@
         line-height: (23/18);
       }
 
-      .nav_header {
+      .nav-header {
         font-weight: 400;
         font-size: 1.8rem;
         line-height: (23/18);
@@ -54,44 +58,33 @@
   display: grid;
   grid-template: "hero-text img-hero" 598px
                     /1fr 1fr;
+  align-content: center;
+  padding-top: 84px;
 
-  .hero-text {
-    grid-area: hero-text;
-  }
+   .hero-text {
+     grid-area: hero-text;
+     align-self: center;
+     margin-right: 109px;
+     width: 445px;
 
-  > h1 {
-    font-weight: 700;
-    font-size: 4.8rem;
-    line-height: (56/48);
-    text-align: left;
-    margin-bottom: 25px;
-  }
+     > h1 {
+       font-weight: 700;
+       font-size: 4.8rem;
+       line-height: (56/48);
+       text-align: left;
+       margin-bottom: 25px;
+     }
 
-  > p {
-    font-weight: 300;
-    font-size: 2.1rem;
-    line-height: (32/21);
-    text-align: left;
-    margin-bottom: 45px;
-  }
+     > p {
+       font-weight: 300;
+       font-size: 2.1rem;
+       line-height: (32/21);
+       text-align: left;
+       margin-bottom: 45px;
 
-   > a {
-     width: 200px;
-     height: 56px;
-     border-radius: 55px;
-     display: block;
-     font-weight: 700;
-     font-size: 1.8rem;
-     line-height: 1;
-     text-align: center;
-     background-color: white;
-     border: #458FF6 solid 1px;
-     padding: 16px 50px;
-     color: #458FF6;
-     margin-top: 32px;
+     }
 
-  }
-
+   }
   .img-hero {
     grid-area: img-hero;
   }

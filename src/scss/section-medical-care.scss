@@ -1,0 +1,16 @@
+.section-medical-care{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 477px;
+  align-items: center;
+  padding-top: 220px;
+
+  .img-medical-care{
+    padding-right: 142px;
+    height: 477px;
+  }
+  .text-medical-care{
+    align-self: center;
+  }
+
+}

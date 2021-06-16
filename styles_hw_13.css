@@ -1,3 +1,4 @@
+@import "reset.css";
 * {
     box-sizing: border-box;
 }
@@ -13,7 +14,7 @@ body {
     width: 300px;
     height: 300px;
     perspective: 500px;
-    /*perspective-origin: center;*/
+    perspective-origin: center;
 
 }
 
@@ -21,7 +22,7 @@ body {
     width: inherit;
     height: inherit;
     transform-style: preserve-3d;
-    animation: cube 5s linear infinite;
+    animation: cube 10s linear infinite;
 
 }
 @keyframes cube {
@@ -36,18 +37,11 @@ body {
     }
 
 }
-.cube_out {
-    width: inherit;
-    height: inherit;
-    transform-style: preserve-3d;
-    animation: cube 10s linear infinite;
-}
 .side {
     position: absolute;
     width: inherit;
     height: inherit;
     border: 3px solid #fff;
-    color: #fff;
     backface-visibility: visible;
 }
 .front {
@@ -75,31 +69,48 @@ body {
 }
 
 .container-min {
-    position: relative;
     margin: 50px 50px 50px 50px;
     width: 200px;
     height: 200px;
     perspective: 1300px;
     perspective-origin: center;
-}
-
-.cube_in {
-    display: inline-block;
     position: absolute;
     top: -2px;
-    transition:  transform 5s linear;
-
+    animation: cube-in 10s linear infinite;
+    transform-style: preserve-3d;
 }
 
+
+@keyframes cube-in {
+    0%{
+        transform: rotateY(0deg) rotateY(0deg);
+    }
+    20%{
+        transform: rotateY(180deg) rotateY(100deg);
+    }
+    40%{
+        transform: rotateY(180deg) rotateY(200deg);
+    }
+    60%{
+        transform: rotateY(360deg) rotateY(0deg);
+    }
+    80%{
+        transform: rotateY(180deg) rotateY(-100deg);
+    }
+    100%{
+        transform: rotateY(0deg) rotateY(-200deg);
+    }
+
+}
 
 .side-min {
     position: absolute;
     width: inherit;
     height: inherit;
     border: 3px solid #fff;
-    color: #fff;
     backface-visibility: hidden;
     background-color: khaki;
+    opacity: 0.4;
 }
 .front-min {
     transform: translateZ(100px);

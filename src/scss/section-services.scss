@@ -1,8 +1,14 @@
 .section-services {
-  > p {
+  @include media-tablet {
+    padding-top: 40px;
+  }
+    > p {
     margin-bottom: 80px;
     width: 952px;
     @include position-center;
+      @include media-tablet{
+        width: 100%;
+      }
   }
 }
 .cards {
@@ -12,6 +18,11 @@
   justify-content: space-between;
   @include position-center;
   @include position-center-text;
+  @include media-tablet{
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+  }
 
   > li {
     width: 350px;
@@ -21,6 +32,9 @@
     padding: 54px 37px 47px 37px;
     margin-bottom: 37px;
     text-align: left;
+    @include media-tablet{
+      margin-bottom: 10px;
+    }
     > div{
       width: 266px;
     }

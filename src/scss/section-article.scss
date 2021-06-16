@@ -4,6 +4,18 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 35px;
   @include position-center;
+  @include media-tablet{
+    gap: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+  }
+  @include media-mobile{
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
   >li{
     margin: auto;
     width:350px;

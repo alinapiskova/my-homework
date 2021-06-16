@@ -26,10 +26,28 @@ a {
   text-decoration: none;
 }
 .container{
-  margin-right: auto;
-  margin-left: auto;
+  @include position-center;
   padding-left: 190px;
   padding-right: 163px;
+  @include media-laptop-min{
+    max-width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }@include media-laptop-min{
+    max-width: 85%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.container-cards {
+  @include position-center;
+  padding-left: 190px;
+  padding-right: 163px;
+  @include media-laptop-min {
+    max-width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .button {

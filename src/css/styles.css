@@ -365,6 +365,14 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 700px) {
+      .hero .header {
+        flex-direction: column;
+        justify-items: center;
+        width: 100%; } }
+    @media (max-width: 700px) {
+      .hero .header div {
+        padding-bottom: 20px; } }
     .hero .header div > a {
       font-weight: 700;
       font-size: 2.6rem;
@@ -387,6 +395,13 @@ button {
       flex-direction: row;
       justify-content: space-around;
       align-items: flex-end; }
+      @media (max-width: 1200px) {
+        .hero .header .nav-hero {
+          gap: 10px; } }
+      @media (max-width: 700px) {
+        .hero .header .nav-hero {
+          gap: 20px;
+          flex-wrap: wrap; } }
       .hero .header .nav-hero .home {
         font-weight: 700;
         font-size: 1.8rem;
@@ -401,11 +416,22 @@ button {
   grid-template: "hero-text img-hero" 598px /1fr 1fr;
   align-content: center;
   padding-top: 84px; }
+  @media (max-width: 1600px) {
+    .section-hero {
+      align-content: flex-start; } }
+  @media (max-width: 1200px) {
+    .section-hero {
+      grid-template: "hero-text" auto "img-hero" auto /1fr;
+      justify-items: center;
+      padding-top: 40px; } }
   .section-hero .hero-text {
     grid-area: hero-text;
     align-self: center;
-    margin-right: 109px;
+    margin-right: 20px;
     width: 445px; }
+    @media (max-width: 700px) {
+      .section-hero .hero-text {
+        width: 80%; } }
     .section-hero .hero-text > h1 {
       font-weight: 700;
       font-size: 4.8rem;
@@ -419,13 +445,30 @@ button {
       text-align: left;
       margin-bottom: 45px; }
   .section-hero .img-hero {
+    width: 100%;
     grid-area: img-hero; }
+    @media (max-width: 1600px) {
+      .section-hero .img-hero {
+        width: 85%; } }
+    @media (max-width: 1200px) {
+      .section-hero .img-hero {
+        padding-top: 20px; } }
+    @media (max-width: 700px) {
+      .section-hero .img-hero {
+        justify-self: flex-start; } }
+
+@media (max-width: 1200px) {
+  .section-services {
+    padding-top: 40px; } }
 
 .section-services > p {
   margin-bottom: 80px;
   width: 952px;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 1200px) {
+    .section-services > p {
+      width: 100%; } }
 
 .cards {
   width: 1120px;
@@ -435,6 +478,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
+  @media (max-width: 1200px) {
+    .cards {
+      width: 100%;
+      justify-items: center;
+      justify-content: center; } }
   .cards > li {
     width: 350px;
     height: 354px;
@@ -443,6 +491,9 @@ button {
     padding: 54px 37px 47px 37px;
     margin-bottom: 37px;
     text-align: left; }
+    @media (max-width: 1200px) {
+      .cards > li {
+        margin-bottom: 10px; } }
     .cards > li > div {
       width: 266px; }
     .cards > li > img {
@@ -459,9 +510,28 @@ button {
   grid-template-rows: 477px;
   align-items: center;
   padding-top: 220px; }
+  @media (max-width: 1300px) {
+    .section-medical-care {
+      align-content: flex-start; } }
+  @media (max-width: 1200px) {
+    .section-medical-care {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      padding-top: 50px; } }
   .section-medical-care .img-medical-care {
     padding-right: 142px;
-    height: 477px; }
+    width: 100%; }
+    @media (max-width: 1300px) {
+      .section-medical-care .img-medical-care {
+        padding-right: 50px;
+        width: 85%; } }
+    @media (max-width: 1200px) {
+      .section-medical-care .img-medical-care {
+        padding-bottom: 20px; } }
+    @media (max-width: 700px) {
+      .section-medical-care .img-medical-care {
+        justify-self: flex-start; } }
   .section-medical-care .text-medical-care {
     align-self: center; }
 
@@ -471,21 +541,42 @@ button {
   grid-template-rows: 434px;
   align-items: center;
   padding-top: 230px; }
+  @media (max-width: 1200px) {
+    .section-mobile-apps {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      padding-top: 50px; } }
   .section-mobile-apps .text-section-mobile-apps {
     align-self: center;
     justify-self: center; }
   .section-mobile-apps .img-section-mobile-apps {
-    height: 434px; }
+    width: 100%; }
+    @media (max-width: 1300px) {
+      .section-mobile-apps .img-section-mobile-apps {
+        width: 85%; } }
+    @media (max-width: 1200px) {
+      .section-mobile-apps .img-section-mobile-apps {
+        padding-top: 20px; } }
+    @media (max-width: 700px) {
+      .section-mobile-apps .img-section-mobile-apps {
+        justify-self: flex-start; } }
 
 .section-reviews {
   color: white;
   padding-top: 266px; }
+  @media (max-width: 1200px) {
+    .section-reviews {
+      padding-top: 50px; } }
   .section-reviews .section-reviews-table {
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
     width: 1120px;
     margin-left: auto;
     margin-right: auto; }
+    @media (max-width: 1200px) {
+      .section-reviews .section-reviews-table {
+        width: 95%; } }
     .section-reviews .section-reviews-table > h2 {
       padding-top: 64px; }
       .section-reviews .section-reviews-table > h2::after {
@@ -508,6 +599,14 @@ button {
   margin-left: 122px;
   margin-bottom: 80px;
   margin-top: 70px; }
+  @media (max-width: 1200px) {
+    .img-section-reviews {
+      margin-left: 80px;
+      margin-top: 40px; } }
+  @media (max-width: 1200px) {
+    .img-section-reviews {
+      margin-left: 20px;
+      margin-right: 15px; } }
 
 .text-h4 {
   font-weight: 700;
@@ -528,11 +627,20 @@ button {
   text-align: left;
   align-self: center;
   padding-left: 110px; }
+  @media (max-width: 1200px) {
+    .text-p-section-reviews {
+      padding-left: 80px; } }
+  @media (max-width: 700px) {
+    .text-p-section-reviews {
+      padding-left: 20px; } }
 
 .arrow {
   display: block;
   text-align: center;
   margin: 33px auto  150px; }
+  @media (max-width: 1200px) {
+    .arrow {
+      margin-bottom: 50px; } }
 
 .button_arrow {
   border: none;
@@ -548,6 +656,17 @@ button {
   gap: 35px;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 1200px) {
+    .section-article-ul {
+      gap: 10px;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; } }
+  @media (max-width: 700px) {
+    .section-article-ul {
+      width: 100%;
+      grid-template-columns: 1fr;
+      justify-items: center; } }
   .section-article-ul > li {
     margin: auto;
     width: 350px;
@@ -594,6 +713,13 @@ footer {
   margin-right: auto;
   text-align: left;
   align-content: center; }
+  @media (max-width: 1200px) {
+    .footer {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  @media (max-width: 1200px) {
+    .footer {
+      flex-direction: column; } }
 
 .div-logo-footer {
   width: 391px;
@@ -601,6 +727,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end; }
+  @media (max-width: 1300px) {
+    .div-logo-footer {
+      max-width: 80%; } }
+  @media (max-width: 1200px) {
+    .div-logo-footer {
+      align-self: center; } }
 
 .nav-footer {
   display: flex;
@@ -608,6 +740,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 637px; }
+  @media (max-width: 1300px) {
+    .nav-footer {
+      max-width: 80%; } }
+  @media (max-width: 1200px) {
+    .nav-footer {
+      width: 100%;
+      align-content: space-around;
+      padding-top: 10px;
+      padding-left: 20px; } }
 
 #logo-T-footer {
   color: #458FF6;
@@ -668,10 +809,31 @@ a {
   text-decoration: none; }
 
 .container {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   padding-left: 190px;
   padding-right: 163px; }
+  @media (max-width: 1600px) {
+    .container {
+      max-width: 85%;
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 1600px) {
+    .container {
+      max-width: 85%;
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.container-cards {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 190px;
+  padding-right: 163px; }
+  @media (max-width: 1600px) {
+    .container-cards {
+      max-width: 80%;
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .button {
   width: 200px;

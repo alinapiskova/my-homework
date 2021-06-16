@@ -15,10 +15,31 @@
   font-size: 2.6rem;
   line-height: (32.63/26);
 }
+@mixin media-laptop-min{
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+@mixin media-tablet-max {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+@mixin media-tablet {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin media-mobile{
+  @media (max-width: 700px) {
+    @content;
+  }
+}
 $color:(
         background-blue-color: white,
         button-background-white-color: #458FF6,
         main-color:black,
 )
+
 
 

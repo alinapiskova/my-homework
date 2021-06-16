@@ -6,6 +6,10 @@ footer {
 .footer {
   padding-top: 109px;
   padding-bottom: 109px;
+  @include media-tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   display: flex;
   flex-direction: row;
@@ -13,7 +17,10 @@ footer {
   @include position-center;
   @include position-left-text;
   align-content: center;
-}
+  @include media-tablet {
+   flex-direction: column;
+  }
+  }
 
 .div-logo-footer {
   width: 391px;
@@ -21,6 +28,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
+  @include media-tablet-max{
+    max-width: 80%;
+  }
+  @include media-tablet {
+    align-self: center;
+  }
 }
 .nav-footer{
   display: flex;
@@ -28,6 +41,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 637px;
+  @include media-tablet-max{
+    max-width: 80%;
+  }
+  @include media-tablet {
+    width: 100%;
+    align-content: space-around;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
 }
 #logo-T-footer {
   color: map-get($color,button-background-white-color);

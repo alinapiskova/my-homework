@@ -4,12 +4,27 @@
   grid-template-rows: 434px;
   align-items: center;
   padding-top: 230px;
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding-top: 50px;
+  }
   .text-section-mobile-apps{
     align-self: center;
     justify-self: center;
   }
   .img-section-mobile-apps{
-    height: 434px;
+    width: 100%;
+    @include media-tablet-max{
+      width: 85%;
+    }
+    @include media-tablet {
+      padding-top: 20px;
+    }
+    @include media-mobile {
+      justify-self: flex-start;
+    }
   }
 
 }

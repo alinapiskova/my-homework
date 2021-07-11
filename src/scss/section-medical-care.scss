@@ -1,0 +1,38 @@
+.section-medical-care{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 477px;
+  align-items: center;
+  padding-top: 220px;
+  @include media-tablet-max {
+    align-content: flex-start;
+  }
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding-top: 50px;
+  }
+
+  .img-medical-care{
+    padding-right: 142px;
+    width: 100%;
+
+    @include media-tablet-max{
+      padding-right:50px ;
+      width: 85%;
+    }
+
+    @include media-tablet {
+      padding-bottom: 20px;
+    }
+
+    @include media-mobile {
+      justify-self: flex-start;
+    }
+  }
+  .text-medical-care{
+    align-self: center;
+  }
+
+}

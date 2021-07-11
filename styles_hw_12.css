@@ -1,0 +1,64 @@
+@import "reset.css";
+
+.turn{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: turn;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes turn {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes earth {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes moon {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+.earth{
+    width: 480px;
+    height: 480px;
+    transform: rotate(23.44deg);
+    animation-name: earth;
+    transform-origin: center;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+
+.moon{
+    width: 131px;
+    height: 131px;
+    transform: rotate(1.5424deg);
+    animation-name: moon;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}

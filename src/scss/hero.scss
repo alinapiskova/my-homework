@@ -1,0 +1,133 @@
+.hero {
+  min-height: 100vh;
+  padding-right: 30px;
+
+
+  .header {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-mobile {
+      flex-direction: column;
+      justify-items: center;
+      width: 100%;
+    }
+
+
+    div {
+      @include media-mobile {
+        padding-bottom: 20px;
+      }
+      > a {
+        @include logo-text;
+      }
+
+      > span {
+        color: map-get($color, background-blue-color);
+        @include position-center-text;
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 1.255;
+        padding: 5px 13px 4px;
+        background: map-get($color, button-background-white-color);
+        width: 41px;
+        height: 41px;
+        border: none;
+        border-radius: 50%;
+      }
+    }
+
+    .nav-hero {
+      gap: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+      @include media-tablet{
+        gap: 10px;
+      }
+      @include media-mobile {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .home {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: (23/18);
+      }
+
+      .nav-header {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: (23/18);
+      }
+    }
+  }
+}
+
+
+.section-hero {
+  display: grid;
+  grid-template: "hero-text img-hero" 598px
+                    /1fr 1fr;
+  align-content: center;
+  padding-top: 84px;
+  @include media-laptop-min {
+    align-content: flex-start;
+  }
+  @include media-tablet {
+    grid-template: "hero-text" auto
+                    "img-hero" auto
+                    /1fr;
+    justify-items: center;
+    padding-top: 40px;
+  }
+
+  .hero-text {
+    grid-area: hero-text;
+    align-self: center;
+    margin-right: 20px;
+    width: 445px;
+    @include media-mobile {
+      width: 80%;
+    }
+
+
+    > h1 {
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: (56/48);
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    > p {
+      font-weight: 300;
+      font-size: 2.1rem;
+      line-height: (32/21);
+      text-align: left;
+      margin-bottom: 45px;
+
+    }
+
+  }
+
+  .img-hero {
+    width: 100%;
+    grid-area: img-hero;
+    @include media-laptop-min {
+      width: 85%;
+    }
+    @include media-tablet {
+      padding-top: 20px;
+    }
+    @include media-mobile {
+      justify-self: flex-start;
+    }
+  }
+}
+

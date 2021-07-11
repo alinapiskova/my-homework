@@ -704,8 +704,11 @@ footer {
   color: white; }
 
 .footer {
-  padding-top: 109px;
-  padding-bottom: 109px;
+  max-width: 1175px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 115px;
+  padding-bottom: 115px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -742,13 +745,15 @@ footer {
   width: 637px; }
   @media (max-width: 1300px) {
     .nav-footer {
-      max-width: 80%; } }
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto; } }
   @media (max-width: 1200px) {
     .nav-footer {
       width: 100%;
       align-content: space-around;
       padding-top: 10px;
-      padding-left: 20px; } }
+      padding-bottom: 20px; } }
 
 #logo-T-footer {
   color: #458FF6;
@@ -802,8 +807,21 @@ footer {
 html {
   font-size: 10px; }
 
+body,
+html {
+  height: 100%; }
+
 body {
-  font-family: Mulish, Arial, sans-serif; }
+  font-family: Mulish, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+main {
+  flex-grow: 1; }
+
+footer {
+  flex-shrink: 0; }
 
 a {
   text-decoration: none; }
